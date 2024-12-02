@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //1.Create a new array where each element is doubled from the given array:
+     
+
+    let arr1 = [1,2,3,4,5]
+    let newArr=arr1.map((e)=>{
+        return e*2
+    })
+    
+    console.log(newArr)
+
+
+    //2.Create a new array with only the even numbers:
+     let arr2=[1,2,3,4,5,6,7,8,9]
+     let newArr2=arr2.filter((e)=>{
+        if(e%2==0){
+           return e
+        }
+     })
+     console.log(newArr2)
+
+
+    //3.3. Check if all elements in the array are greater than 5:
+    //const numbers = [6, 8, 10, 12];
+    //Expected output: true
+
+    let arr3 = [6,8,10,12]
+    let newarr3 = arr3.map((e)=>{
+        if(e>5){
+            return true
+        }else{
+            return false
+        }
+    })
+    console.log(newarr3)
+
+    //4.Sort the array in descending order:
+      let arr4 =[10,20,30,40,50]
+       arr4.sort((a,b)=>b-a)
+       console.log(arr4)
+
+
+    //5.5. Find the longest string in the array:
+      //const words = ["apple","banana", "cherry", "date"];
+// Expected output:"banana"
+     let words =["apple","banana", "cherry", "date"]
+      let longestword=""
+      words.forEach((words)=>{
+        if(words.length>longestword.length){
+            longestword=words
+        }
+      })
+       console.log(longestword)
+
+    //6. Extract a portion of the array
+    //const numbers = [10, 20, 30, 40,
+    // Expected output: [10, 20, 30]
+
+    let number= [10,20,30,40]
+    let newarr=number.slice(0,3)
+   
+    console.log(newarr)
+    console.log(number)
+
+    //7Extract elements from the middle
+     // " Expected output: ['c','d','e']
+      let letters = ['a','b','c','d','e','f']
+    
+      let newletters= letters.slice(2,5)
+      console.log(newletters)
+
+      //8.Add element to the array
+      // add60 and 70 at index 2
+
+      let add=[0,1,2,3,4]
+      add.splice(2,0,60,70)
+      console.log(add)
+      console.log("---------------------")
+      //9.remove the element from the array
+      //remove the last 2 element
+      let letters1= ['a','b','c','d','e']
+      letters1.splice(3,2)
+      console.log(letters1)
+
+
+      //10.add multiple element
+      //add 50,60 and 70 to the array
+      let numm = [10,20]
+      numm.splice(3,0,50,60,70)
+      console.log(numm)
+
+
+      //11.find the index of a element
+      //find the index of the element 50
+      let num4= [10,20,30,50,60]
+      let find=50;
+      console.log(num4.indexOf(find))
+
+      //12.Convert to uppercase
+      //use map to convert all string in the array to uppercase
+      let upper = ['a','b','c','d','e']
+      let newUpper = upper.map((e)=>{
+         return e.toUpperCase();
+      })
+
+      console.log(newUpper)
+    </script>
+</body>
+</html>

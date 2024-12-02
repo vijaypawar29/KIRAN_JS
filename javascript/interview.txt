@@ -1,0 +1,6 @@
+interview
+
+1.explain diff. between let ,var and const keyword in js
+2.explain diff between while and do while
+3.how to write nested for loop in js write one example
+

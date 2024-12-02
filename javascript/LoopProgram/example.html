@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+     table {
+        margin: auto;
+        border-collapse: collapse;
+        width: 50%;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+   </style>
+
+
+</head>
+<body>
+    <script>
+
+        let number1 = parseInt(prompt("Enter a number"))
+        let number2 = parseInt(prompt("Enter a number"))
+        document.write("<table align='center'>")
+       
+      for(let i =number1;i<=number2;i++) {
+          document.write("<tr>")
+          if(i%2==0 ){
+            let even= i*i;
+            document.write(`<td>${i}</td><td> ${even}</td></tr>`)
+          }
+          else if(i%3==0){
+            let odd = i*i*i;
+              document.write(`<td>${i}</td><td> ${odd}</td></tr>`)
+          }
+         
+      }
+      document.write("</table>")
+
+    </script>
+</body>
+</html>

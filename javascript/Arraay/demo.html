@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Addition of all elemets
+
+        let numbers = [45,67,88,90,99,22,34,10,11,55]
+        let sum =0
+        for(let i =0; i<numbers.length;i++)
+    {
+        sum = sum + numbers[i]
+    }
+    console.log("Elements Addtion",sum)
+
+   // print  Even number and odd number addition
+
+    let num = [45,67,88,90,99,22,34,10,11,55]
+    let even = 0;
+    let odd = 0;
+    for(let i =0; i<num.length;i++)
+    {
+        if(num[i]%2==0){
+            even=even+num[i]
+        }else{
+            odd= odd+num[i];
+        }
+    }
+    console.log(` Even number addition -${even}`)
+    console.log(` Even number addition -${odd}`)
+
+
+
+    // create a string array  and find out length of each string
+
+    let names = ["John","Martin","Scoott","Blacke","Joe"]
+    for(let i =0;i<names.length;i++)
+    {
+        console.log(` ${names[i]} length - ${names[i].length}`)
+    }
+
+    //print names which size is > than equal 4 and above...
+
+    let name1 = ["vija","John","Martin","Scoott","Blacke","Joe"]
+    for(let i =0;i<names.length;i++)
+    {
+        if(name1[i].length>=4){
+            console.log(` ${names[i]} length - ${names[i].length}`)
+        }
+       // console.log(` ${names[i]} length - ${names[i].length}`)
+    }
+    </script>
+</body>
+</html>

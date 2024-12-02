@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //    let fruits =["Apple","Banana","Orange","Mango","KIwi"]
+
+    //    //Add new element at the end
+        
+    //    fruits.push("Watermelon")
+    //    console.log(fruits)
+
+
+    //    // Remove element from ending
+
+    //    let removedEle = fruits.pop()
+    //    console.log(fruits)
+    //    console.log(removedEle)
+
+    //    //Remove element  from begiming
+
+    //    fruits.shift()
+    //    console.log(fruits)
+
+    //    //Add Element at first position
+
+    //    fruits.unshift("Pineapple")
+    //    console.log(fruits)
+
+    // // User define valuse in taking user value and then add
+    //    let newElemt=prompt("enter a fruit name")
+    //    fruits.push(newElemt)
+    //    console.log(fruits)
+
+       // Iterate Array
+       //forEach loop
+
+       let fruits =["Apple","Banana","Orange","Mango","KIwi"]
+       fruits.forEach(function(e){
+        console.log(e)
+       })
+
+
+       fruits.forEach(function(e,i,a){
+        console.log(`${e} is present at ${i} index in [${a}] array`)
+       })
+
+      // Arrow funcation
+      fruits.forEach((e)=>{
+        console.log(e)
+      })
+
+      //search  Element using indexof
+
+
+      let serchElemt = fruits.indexOf("Blueberry")
+      console.log(serchElemt)
+
+      let serchElemt1 = fruits.indexOf(2)
+      console.log(serchElemt1)
+
+      let serchElemt2 = fruits.indexOf("Apple")
+      console.log(serchElemt2)
+
+
+      // seacrhin elemet using includes method program 1
+
+      let result = fruits.includes("Apple")
+      console.log(result)
+
+
+      let serchElemt3 = prompt("enter a  search elemet")
+      if(fruits.includes(serchElemt3))
+      {
+        console.log(`${serchElemt3} is present`)
+      }else{
+        console.log(`${serchElemt3} is not present`)
+      }
+
+
+      //searching element using includes method program2
+
+      let serchElemt4 = prompt("enter search element")
+      if(fruits.includes(serchElemt4))
+      {
+        let i = fruits.indexOf(serchElemt4)
+        console.log(`${serchElemt4} is present at ${i} index`)
+      }else{
+        console.log(`${serchElemt4} is present at ${i} index`)
+      }
+
+
+
+
+      // Transfroming Array
+
+      let num = [2,2.8,9,6,4]
+      num.map((e,i,a)=>{
+        console.log(e)
+      })
+
+      let newArray = num.map(function(e){
+        return e*2
+      })
+
+      console.log(newArray)
+
+    </script>
+</body>
+</html>

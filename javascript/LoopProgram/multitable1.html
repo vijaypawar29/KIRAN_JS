@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     table {
+           margin: auto;
+           border-collapse: collapse;
+           width: 70%;
+       }
+       td, th {
+           border: 1px solid black;
+           padding: 10px;
+           text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("Enter First Number"))
+        let num2 = parseInt(prompt("Enter First Number"))
+        document.write("<table align='center'>")
+
+        for(let i = num1;i<=num2;i++){
+
+            document.write("<tr>")
+            for(let j =1; j<=10; j++){
+                let mul =i*j
+                document.write(`<td>${i} * ${j} = ${mul}</td>`)
+            }  
+            document.write("</tr>")  
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>

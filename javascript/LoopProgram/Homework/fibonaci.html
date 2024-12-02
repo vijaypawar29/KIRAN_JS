@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a range for the Fibonacci series:"));
+
+       
+            let a = 0;
+            let b = 1;
+
+           
+
+            // Print the first term
+            document.write(a + ", ");
+
+            // Print the second term if range > 1
+            if (n > 1) {
+                document.write(b + ", ");
+            }
+
+            // Generate Fibonacci series
+            for (let i = 3; i <= n; i++) {
+                let c = a + b;
+                document.write(c);
+
+                // Add a comma separator except after the last term
+                if (i < n) {
+                    document.write(", ");
+                }
+
+                // Update variables for the next term
+                a = b;
+                b = c;
+            }
+
+          
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let num1 = parseInt(prompt("Enter a number"))
+      let num2 = parseInt(prompt("Enter a number"))
+      document.write("<table align='center'>")
+     
+    for(let i =num1;i<=num2;i++) {
+        document.write("<tr>")
+        if(i%3==0 && i%5==0){
+          document.write(`<td>${i}</td><td> FIZZ BUZZ</td></tr>`)
+        }
+        else if(i%3==0){
+            document.write(`<td>${i}</td><td> FIZZ</td></tr>`)
+        }
+        else if(i%5==0){
+            document.write(`<td>${i}</td><td> BIZZ</td></tr>`) 
+        }
+        else{
+            document.write(`<td>${i}</td><td>NOne</td></tr>`) 
+        }
+    }
+    document.write("</table>")
+    </script>
+</body>
+</html>
