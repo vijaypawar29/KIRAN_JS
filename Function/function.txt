@@ -1,0 +1,28 @@
+Function 
+there are 4 different categerious--
+1.without argument without return
+2.with argument without return
+3.without argument with return
+4.with argument with return
+
+how to define function in js
+
+function calling---single line statement 
+function definition -- function actual body
+
+syntax--
+
+function calling -- name_of_function--ex. fun()
+
+function definition-
+
+function name_of_function()
+{
+    function body......
+}
+
+ex.
+Function fun()
+{
+    console.log("hello")
+}
